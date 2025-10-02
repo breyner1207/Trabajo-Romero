@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cuerpo-1 {
+  font-family: 'Segoe UI', sans-serif;
+  background-image:url("https://i.postimg.cc/qRpSgySm/Fondo.jpg");
+  padding: 40px 0;
+  color: #333;
+}
+
+.contenedor-1 {
+  display: flex;
+  max-width: 1500px;
+  margin-left: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+	margin-top: 100px;
+}
+
+/* Columna izquierda */
+.columna-izquierda-1 {
+  width: 700px;
+  background-color: #ffd699;
+  padding: 30px;
+  text-align: center;
+}
+
+.foto-perfil-1 {
+  width: 500px;
+  height: 600px;
+  border-radius: 10%;
+  object-fit: cover;
+  background-color: peru;
+  border: 5px solid ;
+	margin-bottom: 40px
+}
+
+.nombre-1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+	font-family: "Times New Roman"
+}
+
+.titulo-personal-1 {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+	font-family: "Times New Roman"
+}
+
+/* Contacto */
+.seccion-contacto-1 {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.subtitulo-1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b05e00;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #b05e00;
+}
+
+.numero-contacto-1,
+.correo-1,
+.ubicacion-1 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+/* Columna derecha */
+.columna-derecha-1 {
+  width: 1000px;
+  padding: 30px 40px;
+}
+
+/* Secciones principales */
+.titulo-seccion-1,
+.titulo-seccion-2 {
+  font-size: 20px;
+  color: #b05e00;
+  border-bottom: 2px solid #b05e00;
+  margin-bottom: 15px;
+}
+
+.descripcion-experiencia-1 {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.lista-habilidades-1 {
+  list-style: circle;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.lista-habilidades-1 li {
+  margin-bottom: 10px;
+}
+
+/* Contenedor de botones */
+.botones-finales {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Por si estás en pantallas pequeñas */
+}
+
+/* Estilos de botón */
+.boton-accion {
+  padding: 20px 40px;
+  font-size: 20px;
+  width: 250px;
+  height: 70px;
+  background-color: burlywood;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+	font-family: "Times New Roman"
+}
+
+/* Efecto hover */
+.boton-accion:hover {
+  background-color: #0056b3;
+}

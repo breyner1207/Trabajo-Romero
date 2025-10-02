@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cuerpo-1 {
+  font-family: 'Segoe UI', sans-serif;
+  background-image:url("https://i.postimg.cc/qRpSgySm/Fondo.jpg");
+  padding: 40px 0;
+  color: #333;
+}
+
+.contenedor-1 {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Columna izquierda */
+.columna-izquierda-1 {
+  width: 30%;
+  background-color: burlywood;
+  padding: 30px;
+  text-align: center;
+}
+
+.foto-perfil-1 {
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #e0e0e0;
+}
+
+.nombre-1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+	font-family: "Times New Roman"
+}
+
+.titulo-personal-1 {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+	font-family: "Times New Roman"
+}
+
+/* Secciones columna izquierda */
+.seccion-contacto-1,
+.seccion-perfil-1,
+.seccion-habilidades-1,
+.seccion-idiomas-1,
+.seccion-reconocimientos-1 {
+  margin-bottom: 25px;
+  text-align: left;
+	
+}
+
+.subtitulo-1,
+.subtitulo-2,
+.subtitulo-3,
+.subtitulo-4,
+.subtitulo-5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #cc7a00;
+  border-bottom: 1px solid #cc7a00;
+}
+
+.numero-contacto-1,
+.correo-1,
+.ubicacion-1 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.parrafo-1 {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.lista-habilidades-1,
+.lista-idiomas-1,
+.lista-reconocimientos-1 {
+  list-style: disc;
+  margin-left: 18px;
+  font-size: 13px;
+}
+
+.lista-habilidades-1 li,
+.lista-idiomas-1 li,
+.lista-reconocimientos-1 li {
+  margin-bottom: 5px;
+}
+
+/* Columna derecha */
+.columna-derecha-1 {
+  width: 70%;
+  padding: 30px 40px;
+}
+
+/* Experiencia y Educación */
+.seccion-principal-1,
+.seccion-principal-2 {
+  margin-bottom: 30px;
+}
+
+.titulo-seccion-1,
+.titulo-seccion-2 {
+  font-size: 18px;
+  color: #cc7a00;
+  border-bottom: 2px solid #cc7a00;
+  margin-bottom: 15px;
+}
+
+.experiencia-1,
+.experiencia-2,
+.experiencia-3,
+.educacion-1,
+.educacion-2 {
+  margin-bottom: 20px;
+}
+
+.titulo-experiencia-1,
+.titulo-experiencia-2,
+.titulo-experiencia-3,
+.titulo-educacion-1,
+.titulo-educacion-2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subtitulo-experiencia-1,
+.subtitulo-experiencia-2,
+.subtitulo-experiencia-3,
+.subtitulo-educacion-1,
+.subtitulo-educacion-2 {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.descripcion-experiencia-1,
+.descripcion-experiencia-2,
+.descripcion-experiencia-3,
+.descripcion-educacion-1,
+.descripcion-educacion-2 {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Contenedor de botones */
+.botones-finales {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 200px;
+  flex-wrap: wrap; /* Por si estás en pantallas pequeñas */
+}
+
+/* Estilos de botón */
+.boton-accion {
+  padding: 20px 40px;
+  font-size: 20px;
+  width: 250px;
+  height: 70px;
+  background-color: burlywood;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+	font-family: "Times New Roman"
+}
+
+/* Efecto hover */
+.boton-accion:hover {
+  background-color: #0056b3;
+}
