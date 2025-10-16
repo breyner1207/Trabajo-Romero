@@ -1,57 +1,69 @@
+/* =========================================================
+   RESET GENERAL
+========================================================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* =========================================================
+   CUERPO PRINCIPAL
+========================================================= */
 .cuerpo-1 {
   font-family: 'Segoe UI', sans-serif;
-  background-image:url("https://i.postimg.cc/qRpSgySm/Fondo.jpg");
+  background-image: url("https://i.postimg.cc/qRpSgySm/Fondo.jpg");
   padding: 40px 0;
   color: #333;
 }
 
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
 .contenedor-1 {
   display: flex;
   max-width: 1500px;
-  margin-left: 350px;
+  margin: 100px auto; /* centrado automático */
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
-	margin-top: 100px;
+  flex-wrap: wrap; /* permite reordenar en pantallas pequeñas */
 }
 
-/* Columna izquierda */
+/* =========================================================
+   COLUMNA IZQUIERDA
+========================================================= */
 .columna-izquierda-1 {
-  width: 700px;
+  flex: 1 1 40%;
   background-color: #ffd699;
   padding: 30px;
   text-align: center;
 }
 
 .foto-perfil-1 {
-  width: 500px;
-  height: 600px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 10%;
   object-fit: cover;
   background-color: peru;
-  border: 5px solid ;
-	margin-bottom: 40px
+  border: 5px solid;
+  margin-bottom: 40px;
 }
 
 .nombre-1 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 8px;
-	font-family: "Times New Roman"
+  font-family: "Times New Roman";
 }
 
 .titulo-personal-1 {
   font-size: 14px;
   color: #444;
   margin-bottom: 20px;
-	font-family: "Times New Roman"
+  font-family: "Times New Roman";
 }
 
 /* Contacto */
@@ -75,13 +87,14 @@
   margin-bottom: 5px;
 }
 
-/* Columna derecha */
+/* =========================================================
+   COLUMNA DERECHA
+========================================================= */
 .columna-derecha-1 {
-  width: 1000px;
+  flex: 1 1 60%;
   padding: 30px 40px;
 }
 
-/* Secciones principales */
 .titulo-seccion-1,
 .titulo-seccion-2 {
   font-size: 20px;
@@ -107,16 +120,17 @@
   margin-bottom: 10px;
 }
 
-/* Contenedor de botones */
+/* =========================================================
+   BOTONES
+========================================================= */
 .botones-finales {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
-  flex-wrap: wrap; /* Por si estás en pantallas pequeñas */
+  flex-wrap: wrap; /* ayuda en pantallas pequeñas */
 }
 
-/* Estilos de botón */
 .boton-accion {
   padding: 20px 40px;
   font-size: 20px;
@@ -129,10 +143,91 @@
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
-	font-family: "Times New Roman"
+  font-family: "Times New Roman";
 }
 
-/* Efecto hover */
 .boton-accion:hover {
   background-color: #0056b3;
+}
+
+/* =========================================================
+   🧠 SECCIÓN RESPONSIVE
+========================================================= */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .contenedor-1 {
+    flex-direction: column;
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .columna-izquierda-1,
+  .columna-derecha-1 {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .foto-perfil-1 {
+    max-width: 300px;
+  }
+
+  .nombre-1 {
+    font-size: 20px;
+  }
+
+  .descripcion-experiencia-1 {
+    font-size: 14px;
+  }
+
+  .boton-accion {
+    font-size: 18px;
+    width: 200px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .contenedor-1 {
+    width: 95%;
+    margin: 30px auto;
+    flex-direction: column;
+  }
+
+  .columna-izquierda-1 {
+    padding: 20px;
+  }
+
+  .foto-perfil-1 {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .nombre-1 {
+    font-size: 18px;
+  }
+
+  .titulo-personal-1 {
+    font-size: 13px;
+  }
+
+  .columna-derecha-1 {
+    padding: 20px;
+  }
+
+  .titulo-seccion-1,
+  .titulo-seccion-2 {
+    font-size: 18px;
+  }
+
+  .descripcion-experiencia-1 {
+    font-size: 13px;
+  }
+
+  .boton-accion {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    padding: 15px;
+  }
 }

@@ -1,16 +1,25 @@
+/* =========================================================
+   RESET GENERAL
+========================================================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* =========================================================
+   ESTILOS GENERALES DEL CUERPO
+========================================================= */
 .cuerpo-1 {
   font-family: 'Segoe UI', sans-serif;
-  background-image:url("https://i.postimg.cc/qRpSgySm/Fondo.jpg");
+  background-image: url("https://i.postimg.cc/qRpSgySm/Fondo.jpg");
   padding: 40px 0;
   color: #333;
 }
 
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+========================================================= */
 .contenedor-1 {
   display: flex;
   max-width: 1000px;
@@ -21,7 +30,9 @@
   overflow: hidden;
 }
 
-/* Columna izquierda */
+/* =========================================================
+   COLUMNA IZQUIERDA
+========================================================= */
 .columna-izquierda-1 {
   width: 30%;
   background-color: burlywood;
@@ -29,6 +40,7 @@
   text-align: center;
 }
 
+/* Foto de perfil */
 .foto-perfil-1 {
   width: 150px;
   height: 200px;
@@ -40,18 +52,19 @@
   border: 3px solid #e0e0e0;
 }
 
+/* Nombre y título */
 .nombre-1 {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 5px;
-	font-family: "Times New Roman"
+  font-family: "Times New Roman";
 }
 
 .titulo-personal-1 {
   font-size: 15px;
   color: #666;
   margin-bottom: 20px;
-	font-family: "Times New Roman"
+  font-family: "Times New Roman";
 }
 
 /* Secciones columna izquierda */
@@ -62,9 +75,9 @@
 .seccion-reconocimientos-1 {
   margin-bottom: 25px;
   text-align: left;
-	
 }
 
+/* Subtítulos */
 .subtitulo-1,
 .subtitulo-2,
 .subtitulo-3,
@@ -77,6 +90,7 @@
   border-bottom: 1px solid #cc7a00;
 }
 
+/* Texto */
 .numero-contacto-1,
 .correo-1,
 .ubicacion-1 {
@@ -90,6 +104,7 @@
   margin-bottom: 8px;
 }
 
+/* Listas */
 .lista-habilidades-1,
 .lista-idiomas-1,
 .lista-reconocimientos-1 {
@@ -104,7 +119,9 @@
   margin-bottom: 5px;
 }
 
-/* Columna derecha */
+/* =========================================================
+   COLUMNA DERECHA
+========================================================= */
 .columna-derecha-1 {
   width: 70%;
   padding: 30px 40px;
@@ -160,16 +177,17 @@
   line-height: 1.5;
 }
 
-/* Contenedor de botones */
+/* =========================================================
+   BOTONES FINALES
+========================================================= */
 .botones-finales {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-top: 200px;
-  flex-wrap: wrap; /* Por si estás en pantallas pequeñas */
+  flex-wrap: wrap; /* Ajuste en pantallas pequeñas */
 }
 
-/* Estilos de botón */
 .boton-accion {
   padding: 20px 40px;
   font-size: 20px;
@@ -182,10 +200,79 @@
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
-	font-family: "Times New Roman"
+  font-family: "Times New Roman";
 }
 
-/* Efecto hover */
 .boton-accion:hover {
   background-color: #0056b3;
+}
+
+/* =========================================================
+   🧠 SECCIÓN RESPONSIVE
+========================================================= */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .contenedor-1 {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .columna-izquierda-1,
+  .columna-derecha-1 {
+    width: 100%;
+  }
+
+  .columna-izquierda-1 {
+    padding: 20px;
+  }
+
+  .columna-derecha-1 {
+    padding: 20px;
+  }
+
+  .nombre-1 {
+    font-size: 20px;
+  }
+
+  .titulo-personal-1 {
+    font-size: 14px;
+  }
+
+  .botones-finales {
+    margin-top: 100px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .contenedor-1 {
+    width: 95%;
+  }
+
+  .foto-perfil-1 {
+    width: 120px;
+    height: 160px;
+  }
+
+  .boton-accion {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .nombre-1 {
+    font-size: 18px;
+  }
+
+  .titulo-seccion-1,
+  .titulo-seccion-2 {
+    font-size: 16px;
+  }
+
+  .columna-izquierda-1,
+  .columna-derecha-1 {
+    padding: 15px;
+  }
 }
